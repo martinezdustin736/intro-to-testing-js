@@ -11,20 +11,13 @@ return "Hello, Jane!";
 
 
 
-function sayHello(input){
-    if(input === "Alex"){
-        return "Hello, Alex!"
+function sayHello(input) {
+    if ((typeof input === "string" && input.trim().length > 0) || typeof input === "number" || typeof input === true) {
+        return "Hello, " + input + "!";
     }
-    else {
-        return "Hello, Jane!"
-    }
+    return "Hello, World!";
 }
 
-function sayHello (input){
-    if (input === "Pat"){
-        return "Hello, Pat!"
-    }
-    else {
-        return "Hello, Alex!"
-    }
+function isFive(){
+ return ;
 }
